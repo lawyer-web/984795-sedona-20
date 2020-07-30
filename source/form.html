@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -39,26 +38,116 @@
         <div class="promo">
             <img src="https://via.placeholder.com/150x150">
         </div>
-
-        <!-- Здесь будет контент -->
-
+        <section class="reviews">
+            <h2 class="reviews__title">
+                Оставьте свой отзыв
+            </h2>
+            <p class="reviews__text">
+                Помогите нашим отелям стать лучше!</br> оставьте отзыв о них, а также о</br> посещенных вами достопримечательностях
+            </p>
+        <section class="form">
+            <h3 class="visually-hiden">
+                Блок с формой
+            </h3>
+            <form action="https://echo.htmlacademy.ru" method="post">
+              <fieldset class="form__user">
+                  <h3 class="form__titile" >
+                     Представьтесь:
+                  </h3>
+                  <p class="form__firstname--name">
+                    <label for="firstname">Имя*:</label>
+                    <input type="text" name="username" id="firstname" placeholder="Петр">
+                  </p></br>
+                  <p class="form__firstname--surname">
+                    <label for="lastname">Фамилия*:</label>
+                    <input type="text" name="username" id="lastname" placeholder="Иванов">
+                  </p></br>
+                  <p class="form__firstname--patronymic">
+                    <label for="patronymic">Отчество:</label>
+                    <input type="text" name="username" id="patronymic" placeholder="Александрович">
+                  </p>
+              </fieldset>
+              <fieldset class="form__contact">
+                  <h3 class="form__contact--information">
+                      Контактная информация:
+                  </h3>
+                  <p class="form__contact--phone">
+                    <label for="appointment-phone">Контактный телефон*:</label>
+                    <input type="tel" name="phone" id="appointment-phone" placeholder="Введите телефон">
+                  </p>
+                  <p class="form__contact--email">
+                    <label for="appointment-email">Электронная почта*:</label>
+                    <input type="email" name="email" id="appointment-email" placeholder="Введите e-mail">
+                  </p>
+              </fieldset>
+              <fieldset class="form__reviews">
+                <h3 class="form__reviews--title">
+                    Ваше общее впечатление:
+                </h3>
+                <ul class="form__reviews--list">
+                    <li class="form__reviews--item">
+                        <input type="radio" name="commment" id="positive" checked>
+                        <label for="positive">Скорее положительное</label>
+                    </li>
+                    <li class="form__reviews--item">
+                        <input type="radio" name="commment" id="negative">
+                        <label for="negative">Скорее отрицательное</label>
+                    </li>
+                    <li class="form__reviews--item">
+                        <input type="radio" name="commment" id="unanswered">
+                        <label for="unanswered">Затрудняюсь ответить</label>
+                    </li>
+                </ul>
+              </fieldset>
+              <fieldset class="form__visited">
+                <h3 class="form__visited--title">
+                    Посещенные достопримечательности:
+                </h3>
+                  <ul class="form__visited--list">
+                     <li class="form__visited--item">
+                      <input type="checkbox" name="bridge" id="bridge" checked>
+                      <label for="bridge">Мост Дьявола</label>
+                     </li>
+                     <li class="form__visited--item">
+                      <input type="checkbox" name="mountain" id="mountain" checked>
+                      <label for="mountain">Гора-Колокол</label>
+                     </li>
+                     <li class="form__visited--item">
+                      <input type="checkbox" name="slide" id="park" checked>
+                      <label for="park">Слайд-парк</label>
+                     </li>
+                     <li class="form__visited--item">
+                      <input type="checkbox" name="crag" id="crag">
+                      <label for="crag">Красные скалы</label>
+                     </li>
+                  </ul>
+              </fieldset>
+              <fieldset class="form__feelings">
+                <h3 class="form__feelings--title">
+                  Опишите свои эмоции:
+                </h3>
+                <textarea name="feeling" id="feeling" cols="30" rows="10" placeholder=" Опишите подробно все свои восторги"></textarea></br>
+                <input type="submit" name="submitinfo" value="Отправить отзыв">
+              </fieldset>
+            </form>
+          </section>
         <footer class="page-footer">
             <div class="page-footer__social social">
                 <b class="social__title">#visitSedona</b>
                 <ul class="social__list">
                     <li class="social__item">
                         <a class="social__link social__link--vkontakte" href="https://vk.com">
-                        В контакте
+                            В контакте
                         </a>
                     </li>
                     <li class="social__item">
                         <a class="social__link social__link--fasebook" href="https://fb.com">
-                        Фейсбук
+                            Фейсбук
                         </a>
                     </li>
                     <li class="social__item">
                         <a class="social__link social__link--youtube" href="https://youtube.com">
-                        Ютуб
+                            Ютуб
                         </a>
                     </li>
                 </ul>
@@ -70,7 +159,6 @@
                 </a>
             </div>
         </footer>
-    </main>
+      </main>
 </body>
-
 </html>
