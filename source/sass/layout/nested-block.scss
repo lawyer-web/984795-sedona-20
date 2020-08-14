@@ -1,0 +1,17 @@
+.nested-block {
+  background-color:$white;
+  list-style: none;
+}
+
+.nested-block__title {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: $black;
+}
+
+.nested-block__description {
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color:$darkgrey;
+}

@@ -1,1 +1,18 @@
-// Начните писать стили здесь
+@import "helpers/variables.scss";
+@import "layout/global.scss";
+@import "base/fonts.scss";
+@import "layout/page.scss";
+@import "layout/page-body.scss";
+@import "layout/page-header.scss";
+@import "layout/main-nav.scss";
+@import "layout/page-main.scss";
+@import "layout/promo.scss";
+@import "layout/advantages.scss";
+@import "layout/nested-block.scss";
+@import "layout/page-footer.scss";
+@import "layout/social.scss";
+@import "layout/copyright.scss";
+@import "layout/review-unit.scss";
+@import "layout/photo.scss";
+@import "layout/map.scss";
+@import "layout/form.scss";

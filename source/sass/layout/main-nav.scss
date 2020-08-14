@@ -1,0 +1,42 @@
+.main-nav{
+  background-color:$blue;
+  outline: 1px dashed black;
+  outline-offset: -6px;
+}
+
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-nav__list a {
+  color: $white;
+  font-weight: bold;
+  line-height: 40px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+
+.main-nav span {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow:hidden;
+}
+
+@media (min-width:$tablet-width){
+  .main-nav__wrapper{
+    display: flex;
+    justify-content: space-between;
+    width: 700px;
+    margin: 0 auto;
+  }
+}
