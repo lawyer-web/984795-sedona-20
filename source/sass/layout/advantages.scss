@@ -1,0 +1,39 @@
+.advantages{
+  background-color:$white;
+  outline: 2px solid rgb(255, 47, 151);
+  margin-bottom: 32px;
+}
+
+  .advantages__slogan {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: $black;
+  }
+
+  .advantages__caption {
+    font-style: normal;
+    font-size: 14px;
+    text-transform: uppercase;
+    color:$black;
+  }
+
+  .advantages__list {
+    list-style: none;
+  }
+
+  .advantages__content {
+    background-color:$blue;
+    color:$white;
+  }
+
+  .advantages__title {
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .advantages__subtitle,
+  .advantages__description {
+    font-size: 14px;
+    line-height: 21px;
+    text-transform: uppercase;
+  }

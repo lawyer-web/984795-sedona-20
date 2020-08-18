@@ -1,0 +1,14 @@
+.social {
+  // background-color: $blue;
+}
+
+.social__list {
+  list-style: none;
+  display: flex;
+}
+
+.social__link--vk,
+.social__link--fasebook,
+.social__link--youtube {
+  background-color: $blue;
+}

@@ -1,0 +1,24 @@
+.photo__list{
+  list-style: none;
+}
+
+.photo__description {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: $black;
+}
+
+.photo__author-name{
+  font-size: 14px;
+  line-height: 24px;
+  color: $darkgrey;
+}
+
+.photo__likes{
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: $black;
+}
