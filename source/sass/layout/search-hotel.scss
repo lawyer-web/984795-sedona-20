@@ -1,0 +1,26 @@
+.search-hotel{
+  margin-bottom: 49px;
+}
+
+.search-hotel__text{
+  font-weight: bold;
+  font-size: 21px;
+  text-transform: uppercase;
+  color: $black;
+}
+
+.search-hotel__description{
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: $darkgrey;
+}
+
+.search-hotel__link{
+  font-weight: bold;
+  font-size: 21px;
+  text-transform: uppercase;
+  color: $white;
+  background: $blue;
+  text-decoration: none;
+}
