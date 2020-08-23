@@ -1,0 +1,21 @@
+.letter{
+  margin-bottom: 48px;
+}
+
+.letter__title{
+  font-weight: bold;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: $black;
+}
+
+.letter__button{
+  width: 458px;
+  height: 58px;
+  background:$blue;
+  font-weight: bold;
+  font-size: 21px;
+  text-transform: uppercase;
+  color: $white;
+  border:2px solid $blue;
+}

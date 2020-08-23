@@ -19,7 +19,7 @@
       </a>
       <nav class="main-nav">
         <button class="main-nav__toogle" type="button">
-          <span class="visually-hiden">Открыть меню</span>
+          <span class="visually-hidden">Открыть меню</span>
         </button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
@@ -30,7 +30,7 @@
               <a href="photo.html">Фото и видео</a>
             </li>
             <li class="site-list__item">
-              <a href="form.html">Форма Отзыва</a>
+              <a href="form.html">Форма отзыва</a>
             </li>
             <li class="site-list__item">
               <a href="https://up.htmlacademy.ru/adaptive/20/">html Academy</a>
@@ -41,8 +41,8 @@
     </header>
     <main>
       <h1 class="visually-hidden">«Сайт туристического городка Седона»</h1>
-      <div class="promo">
-        <img src="img/bg-back-mobile@1x.jpg" />
+      <div class="promo promo-form">
+        <img src="img/text-sedona-index.svg" alt="Текст Седона"/>
       </div>
       <div class="reviews">
         <h2 class="reviews__title">Оставьте свой отзыв</h2>
@@ -51,25 +51,112 @@
           посещенных вами достопримечательностях
         </p>
       </div>
-      <section class="user-name">
-        <h2 class="user-name__title">
-          Представьтесь:
-        </h2>
-        <form action="https://echo.htmlacademy.ru">
-          <label class="user-name__form" for="first-name">Имя*:</label>
-          <input type="text" name="first-name" />
-          <label class="user-name__form" for="surname">Фамилия*:</label>
-          <input type="text" name="surname" />
+      <form action="https://echo.htmlacademy.ru" method="get">
+        <fieldset class="user-name">
+          <legend class="user-name__title">
+            Представьтесь:
+          </legend>
+          <label class="user-name__form" for="first-name">
+            Имя*:
+          </label>
+          <input class="user-name__form--like" type="text" name="first-name" value="Петр"
+          required/>
+          <label class="user-name__form" for="surname">
+            Фамилия*:
+          </label>
+          <input
+            class="user-name__form--like"
+            type="text"
+            name="surname"
+            value="Иванов" required/>
           <label class="user-name__form" for="middle-name">Отчество:</label>
-          <input type="text" name="middle-name" />
-        </form>
-      </section>
-      <section class="contacts">
-        <h2 class="contacts__title">
-          Контактная информация:
-        </h2>
-      </section>
-
+          <input
+            class="user-name__form--like"
+            type="text"
+            name="middle-name"
+            value="Александрович"/>
+        </fieldset>
+        <fieldset class="contacts">
+          <legend class="contacts__title">
+            Контактная информация:
+          </legend>
+          <label class="contacts__form" for="phone">Контактный телефон*:</label>
+          <input
+            class="contacts__form--like"
+            type="tel"
+            name="phone"
+            value="Введите телефон" required/>
+          <label class="contacts__form" for="form-email"
+            >Электронная почта*:</label
+          >
+          <input
+            class="contacts__form--like"
+            type="email"
+            name="form-email"
+            value="Введите e-mail" required/>
+        </fieldset>
+        <fieldset class="impression">
+          <legend class="impression__title">
+            Ваше общее впечатление:
+          </legend>
+          <ul class="impression__list">
+            <li class="impression__item">
+              <input class="impression__item--form" type="radio" id="impression-one"
+                name="impression-active" checked/>
+              <label class="impression__item--text" for="impression-one">
+                Скорее положительное
+              </label>
+            </li>
+            <li class="impression__item">
+              <input class="impression__item--form" type="radio" id="impression-two"
+                name="impression-active"/>
+              <label class="impression__item--text" for="impression-two">
+                Скорее отрицательное
+              </label>
+            </li>
+            <li class="impression__item">
+              <input class="impression__item--form" type="radio" id="no-active"
+                name="impression-active"
+              />
+              <label class="impression__item--text" for="impression-three">
+                Затрудняюсь ответить
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="lions">
+          <legend class="lions__title">
+            Посещенные достопримечательности:
+          </legend>
+            <ul class="lions__list">
+              <li class="lions__item">
+                <input class="lions__item--form" type="checkbox" name="bridge" id="bridge" checked>
+                <label class="lions__item--text" for="bridge">Мост Дьявола</label>
+              </li>
+              <li class="lions__item">
+                <input class="lions__item--form" type="checkbox" name="mountain" id="mountain" checked>
+                <label class="lions__item--text" for="mountain">Гора-Колокол</label>
+              </li>
+              <li>
+                <input class="lions__item--form" type="checkbox" name="slide" id="slide" checked>
+                <label class="lions__item--text" for="slide">Слайд-парк</label>
+              </li>
+              <li class="lions__item">
+                <input class="lions__item--form" type="checkbox" name="crag" id="crag">
+                <label class="lions__item--text" for="crag">Красные скалы</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="letter">
+            <legend class="letter__title">
+              Опишите свои эмоции:
+            </legend>
+            <textarea class="letter__form letter-form" name="comment" rows="10" cols="16">
+              Опишите подробно все свои восторги
+            </textarea>
+            <input class="letter__button" type="submit" value="Отправить отзыв">
+          </fieldset>
+      </form>
       <footer class="page-footer">
         <div class="page-footer__social social">
           <b class="social__title">#visitSedona</b>
