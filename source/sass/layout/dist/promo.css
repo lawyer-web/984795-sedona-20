@@ -2,4 +2,8 @@
   margin-bottom: 31px;
   background-image: url("../../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
+  text-align: center;
+  width: auto;
 }
+
+@m;

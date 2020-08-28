@@ -1,13 +1,14 @@
 .page-header{
   background-color:$white;
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
   }
 
 
 .page-header__logo{
   height: 84px;
   text-align: center;
+  
   @media (min-width:$tablet-width) {
     height: 88px;
 }

@@ -1,5 +1,31 @@
 .promo {
   margin-bottom: 31px;
   background-image: url("../../img/bg-back-mobile@1x.jpg");
-  background-repeat: no-repeat;
+  background-size:cover ;
+  text-align: center;
+  display: block;
+  max-width:100%;
+  height: auto;
 }
+
+  @media(min-width:$tablet-width) {
+    .promo {
+      background-position: center;
+      background-size:cover;
+      display: block;
+      max-width:100%;
+      height: auto;
+      text-align: center;
+      }
+    }
+
+    @media(min-width:$desktop-width) {
+      .promo {
+        background-position: center;
+        background-size:cover;
+        display: block;
+        max-width:100%;
+        height: auto;
+        text-align: center;
+      }
+    }
