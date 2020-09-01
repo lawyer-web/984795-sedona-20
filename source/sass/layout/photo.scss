@@ -6,6 +6,13 @@
   list-style: none;
 }
 
+@media(min-width:$tablet-width){
+  .photo__list{
+    // display: flex;
+    // flex-wrap: wrap;
+  }
+}
+
 .photo__description {
   font-weight: bold;
   font-size: 14px;

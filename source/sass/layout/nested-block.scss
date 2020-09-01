@@ -1,7 +1,25 @@
 .nested-block {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
   background-color:$white;
   list-style: none;
 }
+
+ @media(min-width:$tablet-width){
+   .nested-block{
+     display: flex;
+     flex-direction: row;
+     text-align: center;
+   }
+
+ }
+
+ @media(min-width:$desktop-width){
+   .nested-block{
+     justify-content: space-around;
+   }
+ }
 
 .nested-block__title {
   font-weight: bold;
@@ -9,9 +27,30 @@
   color: $black;
 }
 
+ @media(min-width:$tablet-width){
+   .nested-block__title{
+     font-size: 21px;
+   }
+   .nested-block__souvenirs{
+     order: 1;
+   }
+ }
+
 .nested-block__description {
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
   color:$darkgrey;
+}
+
+@media(min-width:$desktop-width){
+  .nested-block__description--housing{
+    width: 282px;
+  }
+  .nested-block__description--food{
+    width: 313px;
+  }
+  .nested-block__description--souvenirs{
+    width: 244px;
+  }
 }

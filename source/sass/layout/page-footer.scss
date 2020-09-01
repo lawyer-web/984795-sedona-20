@@ -1,9 +1,38 @@
 .page-footer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
   background-color: $white;
+}
+
+@media (min-width:$tablet-width){
+  .page-footer{
+    display: flex;
+    flex-direction: row;
+  }
+  .page-footer__social{
+    display: flex;
+  }
+}
+
+.page-footer__copyright{
+  margin-left: 80px;
+}
+
+@media(min-width:$tablet-width){
+  .page-footer__copyright{
+    margin: 0 auto;
+  }
 }
 
 .page-footer .social__title {
   font-weight: bold;
   font-size: 21px;
   text-transform: uppercase;
+}
+
+.page-footer__copyright{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }

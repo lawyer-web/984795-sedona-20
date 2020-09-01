@@ -62,9 +62,7 @@
               </p>
             </div>
             <div class="advantages__picture">
-            <p class="advantages__picture--block">
               <img src="img/main-city-mobile@1x.jpg" />
-            </p>
             </div>
           </div>
             <ul class="nested-block">
@@ -72,7 +70,7 @@
                 <h4 class="nested-block__title">
                   Жилье
                 </h4>
-                <p class="nested-block__description">
+                <p class="nested-block__description nested-block__description--housing">
                   Рекомендуем пожить в настоящем мотеле, все как в кино!
                 </p>
               </li>
@@ -80,7 +78,7 @@
                 <h4 class="nested-block__title">
                   Сувениры
                 </h4>
-                <p class="nested-block__description">
+                <p class="nested-block__description nested-block__description--souvenirs">
                   Не только китайского, но и местного производства!
                 </p>
               </li>
@@ -88,13 +86,14 @@
                 <h4 class="nested-block__title">
                   Еда
                 </h4>
-                <p class="nested-block__description">
+                <p class="nested-block__description nested-block__description--food">
                   Всегда заказывайте фирменный бургер, Вы не разочаруетесь!
                 </p>
               </li>
             </ul>
           </li>
           <li class="advantages__item">
+           <div class="advantages__wrapper advantages__container">
             <div class="advantages__content">
               <h3 class="advantages__title">Там есть мост дьявола</h3>
               <p class="advantages__subtitle">
@@ -104,43 +103,48 @@
                 Да, по нему можно пройти! Если вы осмелитесь, конечно
               </p>
             </div>
-            <a href="photo.html">
-              <img src="img/main-bridge-mobile@1x.jpg" />
-            </a>
+             <div class="advantages__picture">
+              <a href="photo.html">
+                <img src="img/main-bridge-mobile@1x.jpg" />
+              </a>
+            </div>
+            </div>
           </li>
-          <li class="advantages__item">
+          <div class="advantages__wrapper advantages__wrapper--fon">
+          <li class="advantages__item--list">
             <h3 class="advantages__title">
-              Небольшая площадь
+              Небольшая<br> площадь
             </h3>
             <p class="advantages__subtitle">
               — №3 —
             </p>
             <p class="advantages__description">
-              Все интересные места находятся очень близко
+              Все интересные места<br> находятся очень близко
             </p>
           </li>
-          <li class="advantages__item">
+          <li class="advantages__item--list">
             <h3 class="advantages__title">
-              Красивая дорога
+              Красивая<br> дорога
             </h3>
             <p class="advantages__subtitle">
               — №4 —
             </p>
             <p class="advantages__description">
-              Ехать в Седону из Лас-Вегаса совсем не скучно!
+              Ехать в Седону из<br> Лас-Вегаса совсем<br> не скучно!
             </p>
           </li>
-          <li class="advantages__item">
+          <li class="advantages__item--list">
             <h3 class="advantages__title">
-              Мало туристов
+              Мало<br> туристов
             </h3>
             <p class="advantages__subtitle">
               — №5 —
             </p>
             <p class="advantages__description">
-              Большинство едет в Гранд Каньон и толпится там
+              Большинство едет в<br> Гранд Каньон и<br> толпится там
             </p>
           </li>
+          </div>
         </ul>
       </section>
       <section class="search-hotel">
@@ -151,7 +155,7 @@
           Заинтересовались?
         </p>
         <p class="search-hotel__description">
-          Укажите предполагаемые даты поездки, и мы покажем вам лучшие
+          Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие
           предложения гостиниц в седоне
         </p>
         <a class="search-hotel__link button" href="html.form">Найти гостиницу</a>
@@ -159,7 +163,7 @@
       <div class="map">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3381181.672085685!2d-114.17315239902231!3d34.14799924415805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b08ebcb4c186b%3A0x423927b17fc1cd71!2z0JDRgNC40LfQvtC90LAsINCh0KjQkA!5e0!3m2!1sru!2sua!4v1595224763536!5m2!1sru!2sua"
-         
+
           frameborder="0"
           style="border: 0;"
           allowfullscreen=""
@@ -168,7 +172,8 @@
         >
         </iframe>
       </div>
-      <footer class="page-footer">
+    </main>
+    <footer class="page-footer">
         <div class="page-footer__social social">
           <b class="social__title">#visitSedona</b>
           <ul class="social__list">
@@ -280,6 +285,5 @@
           </a>
         </div>
       </footer>
-    </main>
   </body>
 </html>

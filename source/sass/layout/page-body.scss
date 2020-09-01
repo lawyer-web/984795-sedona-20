@@ -1,7 +1,15 @@
 .page-body{
   min-height: 100%;
   min-width: 320px;
-  margin: 0;
+  margin: 0 auto;
   background-color:$white;
   color:$black;
+}
+
+@media(min-width:$desktop-width){
+  .page-body{
+    min-height: 100%;
+    min-width: 1200px;
+    margin: 0 auto;
+  }
 }

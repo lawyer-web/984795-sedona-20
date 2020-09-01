@@ -1,4 +1,7 @@
 .search-hotel{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
   margin-bottom: 49px;
 }
 
@@ -8,6 +11,12 @@
   text-transform: uppercase;
   color: $black;
 }
+
+ @media(min-width:$tablet-width){
+   .search-hotel__text{
+     font-size: 30px;
+   }
+ }
 
 .search-hotel__description{
   font-size: 14px;

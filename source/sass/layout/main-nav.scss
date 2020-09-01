@@ -27,7 +27,7 @@
 @media(min-width:$tablet-width) {
   .main-nav__list{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     margin: 0;
     padding: 0;
   }
@@ -36,7 +36,7 @@
 @media(min-width:$desktop-width){
   .main-nav__list {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     margin: 0;
     padding: 0;
   }

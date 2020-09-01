@@ -1,3 +1,21 @@
+.review-unit{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+@media(min-width:$tablet-width){
+  .review-unit{
+
+  }
+  .review-unit__title{
+    font-size: 30px;
+  }
+  .review-unit__text{
+    
+  }
+}
+
 .review-unit__title {
   font-size: 18px;
   font-weight: bold;
