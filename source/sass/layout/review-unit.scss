@@ -4,15 +4,23 @@
   text-align: center;
 }
 
-@media(min-width:$tablet-width){
-  .review-unit{
+.review-unit__text--skip {
+  display: block;
+}
 
-  }
+.review-unit__text--tablet{
+  display: none;
+}
+
+@media(min-width:$tablet-width){
   .review-unit__title{
     font-size: 30px;
   }
-  .review-unit__text{
-    
+  .review-unit__text--skip {
+    display: none;
+  }
+  .review-unit__text--tablet{
+    display:block;
   }
 }
 

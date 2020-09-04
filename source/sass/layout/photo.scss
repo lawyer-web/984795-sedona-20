@@ -4,13 +4,41 @@
 
 .photo__list{
   list-style: none;
+  padding: 0;
 }
 
 @media(min-width:$tablet-width){
   .photo__list{
-    // display: flex;
-    // flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
   }
+  .photo__item{
+    width: 324px;
+  }
+  .photo__item--vast{
+    width: 100%;
+    background:yellowgreen;
+  }
+}
+
+@media(min-width:$desktop-width){
+  .photo__list{
+    display: flex;
+    padding: 0;
+  }
+  .photo__item{
+    width: 400px;
+  }
+
+ }
+
+
+@media(min-width:$desktop-width){
+  .photo__item--vast {
+    width: 100%;
+    background:lightcoral;
+  }
+
 }
 
 .photo__description {

@@ -8,6 +8,7 @@
   </head>
 
   <body class="page-body">
+
     <header class="page-header">
       <a class="page-header__logo" href="index.html">
         <img src=" img/logo-mobile.svg " width="101" height="84" alt="Логотип Седона"/>
@@ -39,28 +40,36 @@
       <div class="promo">
         <img src="img/text-sedona-index.svg" alt="Текст Седона"/>
       </div>
+    <div class="container-wrapper">
       <div class="review-unit">
         <h2 class="review-unit__title">
           Фото и видео
         </h2>
         <p class="review-unit__text">
-          Не можете решиться на путешествие<br> из-за курса? Фотографии помогут Вам<br>
-          забыть о политике и экономике
+          Не можете решиться на путешествие<br class="review-unit__text--skip"> из-за курса?<br class="review-unit__text--tablet"> Фотографии помогут Вам<br class="review-unit__text--skip">
+          забыть о политике и экономике.
         </p>
       </div>
       <section class="photo">
         <ul class="photo__list">
-          <li class="photo__item">
+          <li class="photo__item photo__item--vast">
             <a href="#">
               <img src="img/photo-sunset-mobile@1x.jpg" />
             </a>
-            <p class="photo__description">
-              Неродные просторы
-            </p>
-            <p class="photo__author-name">Автор фото:Борис</p>
-            <p class="photo__likes">
-              1350
-            </p>
+            <div class="photo__item--wrapper">
+              <div class="photo__item--container">
+                <p class="photo__description">
+                  Неродные просторы
+                </p>
+                <p class="photo__author-name">Автор фото:Борис</p>
+              </div>
+              <div class="photo__item--likes">
+                <p class="photo__likes">
+                  1350
+                </p>
+              </div>
+            </div>
+
           </li>
           <li class="photo__item">
             <a href="#">
@@ -215,6 +224,8 @@
           </a>
         </div>
       </footer>
+    </div>
     </main>
+   </div>
   </body>
 </html>
