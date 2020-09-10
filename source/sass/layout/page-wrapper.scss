@@ -1,0 +1,12 @@
+@media(min-width:$desktop-width) {
+  .page-wrapper {
+    max-width: 1200px;
+    margin: auto;
+  }
+}
+
+@media(min-width:$tablet-width) {
+  .page-wrapper {
+    margin: auto;
+  }
+}

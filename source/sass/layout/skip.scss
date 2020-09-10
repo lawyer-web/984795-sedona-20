@@ -1,0 +1,33 @@
+.skip__hotel {
+  display: none;
+}
+
+
+.skip__sinema {
+  display: block;
+}
+
+.skip__desktop {
+  display: none;
+}
+
+@media(min-width:$tablet-width) {
+  .skip__hotel {
+    display: block;
+  }
+
+  .skip__sinema {
+    display: none;
+  }
+
+  .skip__desktop {
+    display: none;
+  }
+}
+
+@media(min-width:$desktop-width) {
+  .skip__desktop {
+    display: block;
+  }
+
+}

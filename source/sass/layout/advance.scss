@@ -1,0 +1,39 @@
+.advance{
+  background: #EEEEEE;
+}
+
+.advance__list{
+  list-style: none;
+  padding: 0;
+}
+
+.advance__title{
+  text-transform: uppercase;
+}
+
+.advance__title .skip{
+  display: none;
+}
+
+.advance__subtitle,
+.advance__description{
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: $darkgrey;
+}
+
+@media(min-width:$tablet-width){
+  .advance__list{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .advance__title{
+    text-transform: uppercase;
+  }
+
+  .advance__title .skip{
+    display: block;
+  }
+}

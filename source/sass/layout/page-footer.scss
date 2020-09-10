@@ -16,12 +16,23 @@
 }
 
 .page-footer__copyright{
-  margin-left: 80px;
+  margin:auto;
+}
+
+.page-footer__title{
+  text-transform: uppercase;
 }
 
 @media(min-width:$tablet-width){
   .page-footer__copyright{
     margin: 0 auto;
+  }
+  .page-footer__title{
+    display: flex;
+    align-items: center;
+    margin-left: 45px;
+    font-size: 21px;
+    text-transform: uppercase;
   }
 }
 
