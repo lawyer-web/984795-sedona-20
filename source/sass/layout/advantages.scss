@@ -1,38 +1,133 @@
-.advantages{
-  background-color:$white;
+.advantages {
+  background-color: $white;
   margin-bottom: 32px;
 }
 
+.advantages__header {
+  margin: 0 26px 0 9px;
+  text-align: center;
+}
+
+.advantages__slogan {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: $black;
+  font-size: 18px;
+}
+
+.advantages__item {
+  background-color: $blue;
+  width: 320px;
+  height: 211px;
+  padding-top: 10px;
+}
+
+.advantages__block {
+  height: 187px;
+}
+
+.advantages__caption {
+  font-style: normal;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: $black;
+}
+
+.advantages__title {
+  font-weight: bold;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: $white;
+}
+
+.advantages__list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.advantages__bridge--list {
+  list-style: none;
+}
+
+.advantages__reference--list {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  list-style: none;
+}
+
+.advantages__promo--list {
+  list-style: none;
+}
+
+.advantages__wrapper {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.advantages__wrapper--fon {
+  background-color: #eee;
+}
+
+.advantages__subtitle,
+.advantages__description {
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: $white;
+}
+
+@media (min-width: $tablet-width) {
   .advantages__slogan {
-    font-weight: bold;
-    text-transform: uppercase;
-    color: $black;
+    font-size: 21px;
+  }
+
+  .advantages__slogan .skip {
+    display: none;
   }
 
   .advantages__caption {
-    font-style: normal;
-    font-size: 14px;
-    text-transform: uppercase;
-    color:$black;
+    color: $darkgrey;
   }
 
-  .advantages__list {
-    list-style: none;
+  .advantages__caption .skip {
+    display: none;
   }
 
-  .advantages__content {
-    background-color:$blue;
-    color:$white;
+  .advantages__item {
+    order: 2;
+    height: 255px;
+  }
+
+  .advantages__wrapper--fon {
+    background-color: #eee;
+  }
+
+  .advantages__town,
+  .advantages__bridge {
+    display: flex;
   }
 
   .advantages__title {
-    font-weight: bold;
-    text-transform: uppercase;
+    font-size: 21px;
   }
 
-  .advantages__subtitle,
-  .advantages__description {
-    font-size: 14px;
-    line-height: 21px;
-    text-transform: uppercase;
+  .advantages__container {
+    flex-direction: row-reverse;
   }
+
+  .advantages__item--list {
+    text-align: center;
+  }
+
+  .advantages__picture {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantages {
+    min-width: 1200px;
+  }
+}

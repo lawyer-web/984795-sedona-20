@@ -1,0 +1,66 @@
+  .reference__item {
+    list-style: none;
+    text-align: left;
+  }
+
+  .reference__title {
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: $black;
+  }
+
+  .reference__description {
+    font-size: 14px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: $darkgrey;
+  }
+
+  .reference__description--housing .skip {
+    display: block;
+  }
+
+  @media(min-width:$tablet-width) {
+    .reference__item {
+      display: flex;
+      padding: 0;
+      margin: auto;
+      text-align: center;
+      justify-content: space-between;
+    }
+
+    .reference__list--souvenir {
+      width: 193px;
+      margin-right: 30px;
+      order: 3;
+    }
+
+    .reference__list--housing {
+      width: 185px;
+      margin-right: 60px;
+    }
+
+    .reference__list--food {
+      width: 180px;
+      margin-right: 60px;
+    }
+
+    .reference__description {
+      // width: 185px;
+    }
+
+    .reference__list--souvenir .reference__description {
+      // width: 193px;
+    }
+  }
+
+  @media(min-width:$desktop-width) {
+    .reference__title {
+      font-size: 21px;
+    }
+
+    .reference__description br {
+      display: none;
+    }
+  }

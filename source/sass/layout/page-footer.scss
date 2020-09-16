@@ -1,9 +1,51 @@
 .page-footer {
+  text-align: center;
   background-color: $white;
+}
+
+.page-footer__copyright {
+  display: flex;
+  align-items: center;
+  margin: auto;
+  justify-content: center;
+}
+
+.page-footer__title {
+  text-transform: uppercase;
 }
 
 .page-footer .social__title {
   font-weight: bold;
   font-size: 21px;
   text-transform: uppercase;
+}
+
+
+@media (min-width:$tablet-width) {
+  .page-footer {
+    display: flex;
+  }
+  .page-footer__copyright {
+    display: flex;
+    align-items: center;
+    margin: auto;
+  }
+
+  .page-footer__social {
+    display: flex;
+  }
+}
+
+@media(min-width:$tablet-width) {
+  .page-footer__copyright {
+    margin: 0 auto;
+  }
+
+  .page-footer__title {
+    display: flex;
+    align-items: center;
+    margin-left: 45px;
+    font-size: 21px;
+    text-transform: uppercase;
+  }
 }
