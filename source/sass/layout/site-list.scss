@@ -1,13 +1,43 @@
 @media(min-width:$tablet-width) {
   .site-list {
-    padding-left: 45px;
-    padding-right: 25px;
+    // padding-left: 50px;
+    // padding-right: 26px;
   }
+  .site-list__item--form{
+  //   margin-left: auto;
+  // }
+  .site-list__item--photo{
+    // margin-left: 78px;
+  }
+  .site-list__item--academy{
+    // margin-left: 49px;
+  }
+}
 }
 
 @media(min-width:$desktop-width) {
   .site-list {
-    padding-left: 90px;
-    padding-right: 66px;
+  //   padding-left: 90px;
+  //   padding-right: 66px;
+  // }
+
+  .site-list__item--active{
+    // margin-top: 7px;
   }
+
+  .site-list__item--photo{
+    // margin-top: 7px;
+    // margin-left: 202px;
+  }
+
+  .site-list__item--form{
+    // margin-top: 7px;
+    // margin-left: auto;
+  }
+
+  .site-list__item--academy{
+    //  margin-top: 7px;
+    //  margin-left: 2px;
+  }
+}
 }

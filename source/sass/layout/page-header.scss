@@ -4,13 +4,6 @@
   flex-direction: column;
 }
 
-@media (min-width:$tablet-width) {
-  .page-header {
-    flex-direction: column-reverse;
-  }
-
-}
-
 .page-header__logo {
   height: 84px;
   text-align: center;
@@ -18,8 +11,18 @@
 }
 
 @media (min-width:$tablet-width) {
+  .page-header {
+    // flex-direction: column-reverse;
+    position: relative;
+  }
+
   .page-header__logo {
+    // display: block;
     height: 88px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
 
   }
 
@@ -28,5 +31,7 @@
 @media (min-width:$desktop-width) {
   .page-header__logo {
     height: 96px;
+    display: block;
+    margin-left: 40px;
   }
 }
